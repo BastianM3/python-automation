@@ -107,8 +107,8 @@ l_env_vars = l_tdef_details['taskDefinition']['containerDefinitions'][0]['enviro
 
 # Describe the target environment
 t_tdef_details = get_tdef_for_service(
-    params.target_env_cluster or 'nebula-qa',
-    params.target_env_serv or 'nebula-retina',
+    params.target_env_cluster,
+    params.target_env_serv,
     t_cl, 'Target'
 )
 
